@@ -29,9 +29,9 @@ namespace HomeWork9
             }
 
 
-            DisplayEmployeeSalaryByIndex(ref databaseArr, employeeCount);
+            DisplayEmployeeSalaryByIndex(databaseArr, employeeCount);
 
-            DisplayAllEmployeeSalary(ref databaseArr, employeeCount);
+            DisplayAllEmployeeSalary(databaseArr, employeeCount);
 
             Console.ReadKey();
         }
@@ -57,17 +57,18 @@ namespace HomeWork9
             databaseArr[1, employeeIndex] = amountHoursWorked;
         }
 
-        static void DisplayEmployeeSalaryByIndex(ref double[,] databaseArr, int employeeCount)
+        static void DisplayEmployeeSalaryByIndex(double[,] databaseArr, int employeeCount)
         {
             string msgInputEmployeeId = "Введите № сотрудника от 0 ";
             string msgSalary = "Объем заработной платы сотрудника № ";
             string invalidEmployeeId = "Вы ввели ID несуществующего сотрудника";
+            int employeeIndex = 0;
 
             Console.WriteLine($"{msgInputEmployeeId} до {employeeCount - 1}");
-            int employeeIndex = int.Parse(Console.ReadLine());
 
             try
             {
+                employeeIndex = int.Parse(Console.ReadLine());
                 double total = total = databaseArr[0, employeeIndex] * databaseArr[1, employeeIndex];
                 Console.WriteLine($"{msgSalary}{employeeIndex} : {total}");
             }
@@ -78,7 +79,7 @@ namespace HomeWork9
 
         }
 
-        static void DisplayAllEmployeeSalary(ref double[,] databaseArr, int employeeCount)
+        static void DisplayAllEmployeeSalary(double[,] databaseArr, int employeeCount)
         {
             string msgTotal = "Общий объем бюджета заработной платы за отчетный период ";
 

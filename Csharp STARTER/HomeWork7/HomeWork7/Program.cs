@@ -170,7 +170,7 @@ namespace HomeWork7
                     break;
             }
 
-            return true;
+            return isValidOperator;
         }
 
         static void pressAnyButtonToContinue()
