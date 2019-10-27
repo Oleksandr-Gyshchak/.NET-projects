@@ -13,7 +13,6 @@ namespace Home_work_2
         {
             Type objectType = this.GetType();
             Console.WriteLine("Я {0}, двигаюсь в воде быстро", objectType);
-            base.Move();
         }
 
     }

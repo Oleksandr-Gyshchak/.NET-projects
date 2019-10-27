@@ -14,31 +14,31 @@ namespace Home_work_2
             human.Move();
 
             // up cast
-            Primata primate = human;
+            Primata primate = new Primata();
             primate.Move();
 
-            Vertebrata vertebrate = primate;
+            Vertebrata vertebrate = new Vertebrata();
             vertebrate.Move();
 
-            Chordate chordate = vertebrate;
+            Chordate chordate = new Chordate();
             chordate.Move();
 
-            Animal animal = chordate;
+            Animal animal = new Animal();
             animal.Move();
 
             
             // down cast
             Console.WriteLine("\n down cast");
-            Chordate chordate2 = (Chordate)animal;
+            Chordate chordate2 = new Chordate();
             chordate2.Move();
 
-            Vertebrata vertebrate2 = (Vertebrata)chordate2;
+            Vertebrata vertebrate2 =  new Vertebrata();
             vertebrate2.Move();
 
-            Primata primate2 = (Primata)vertebrate2;
+            Primata primate2 = new Primata();
             primate2.Move();
 
-            Human human2 = (Human)primate2;
+            Human human2 = new Human();
             human2.Move();
             
 
