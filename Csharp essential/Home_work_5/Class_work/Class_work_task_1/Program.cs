@@ -4,12 +4,15 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Home_work_4
+namespace Class_work_task_1
 {
     class Program
     {
         static void Main(string[] args)
         {
+
         }
     }
 }
+
+

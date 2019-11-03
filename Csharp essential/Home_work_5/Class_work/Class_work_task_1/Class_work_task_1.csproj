@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{537DC6A6-90D8-4A6D-A396-45D586862975}</ProjectGuid>
+    <ProjectGuid>{423F0B3A-93AF-415F-8A1B-79DB940F9857}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Home_work_4</RootNamespace>
-    <AssemblyName>Home_work_4</AssemblyName>
+    <RootNamespace>Class_work_task_1</RootNamespace>
+    <AssemblyName>Class_work_task_1</AssemblyName>
     <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -43,6 +43,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Indexers.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
